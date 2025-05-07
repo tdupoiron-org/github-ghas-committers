@@ -138,17 +138,14 @@ async function main() {
             }
         }
 
+        successfullyProcessed++;
+
     } catch (error) {
       // log error
       if (argv.verbose) {
         console.log(`Error fetching code security configuration for ${name}`);
       }
       continue;
-    }
-
-    // Increment counter for successful processing only if in the optional org name
-    if (argv.org && repo_data.name.startsWith(`${argv.org}/`)) {
-      successfullyProcessed++;
     }
 
     if (!secretProtectionEnabled) {
