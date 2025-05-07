@@ -1,0 +1,20 @@
+{
+  "name": "ghas-billing-api",
+  "version": "1.0.0",
+  "description": "GitHub Advanced Security billing API integration",
+  "main": "ghas-licensing-by-tool.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "author": "aegilops",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/plugin-throttling": "^10.0.0",
+    "@octokit/rest": "^21.1.1",
+    "minimist": "^1.2.8"
+  }
+}
